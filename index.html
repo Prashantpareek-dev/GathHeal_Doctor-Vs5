@@ -1,0 +1,3205 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गाँठ की समस्या? — Free Ayurvedic Expert Guidance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #2E7D32;
+            --light-green: #81C784;
+            --cream: #FFF8E7;
+            --dark: #1B1B1B;
+            --grey: #6B7280;
+            --orange: #FF7A00;
+            --white: #FFFFFF;
+            --green-dark: #1B5E20;
+            --orange-light: #FF9A40;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Halant', serif;
+            background: #E8E0D0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 450px;
+            background: var(--cream);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: var(--green);
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .hero-bg-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(129, 199, 132, 0.18) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 122, 0, 0.10) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .hero-top-ribbon {
+            background: var(--orange);
+            text-align: center;
+            padding: 9px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--white);
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 2;
+            animation: pulse-ribbon 2.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-ribbon {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.82;
+            }
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+        }
+
+        .hero-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.62) saturate(1.1);
+        }
+
+        .hero-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(46, 125, 50, 0.55) 0%, rgba(27, 94, 32, 0.78) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 22px 48px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            background: rgba(255, 122, 0, 0.18);
+            border: 1.5px solid var(--orange);
+            color: var(--orange-light);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-headline {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.25;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-headline span {
+            color: var(--orange-light);
+        }
+
+        .hero-sub {
+            font-size: 15.5px;
+            color: rgba(255, 255, 255, 0.88);
+            line-height: 1.55;
+            margin-bottom: 8px;
+        }
+
+        .hero-punch {
+            font-size: 13.5px;
+            color: var(--light-green);
+            font-weight: 600;
+            margin-bottom: 18px;
+            font-style: italic;
+        }
+
+        .hero-body {
+            position: relative;
+            z-index: 2;
+            padding: 0 18px 28px;
+            background: var(--green);
+            margin-top: -2px;
+        }
+
+        .hero-expert-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(129, 199, 132, 0.35);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin-bottom: 18px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero-expert-box p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .hero-expert-box p span {
+            color: var(--light-green);
+            font-weight: 600;
+        }
+
+        .value-strip {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 22px;
+        }
+
+        .value-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            font-size: 14.5px;
+            font-weight: 500;
+        }
+
+        .value-icon {
+            width: 28px;
+            height: 28px;
+            background: rgba(129, 199, 132, 0.22);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            border: 1px solid rgba(129, 199, 132, 0.4);
+        }
+
+        .offer-strip {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .offer-chip {
+            background: linear-gradient(135deg, rgba(255, 122, 0, 0.18), rgba(255, 122, 0, 0.08));
+            border: 1px solid rgba(255, 122, 0, 0.5);
+            border-radius: 10px;
+            padding: 8px 6px;
+            text-align: center;
+        }
+
+        .offer-chip .icon {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .offer-chip .label {
+            font-size: 11px;
+            color: var(--orange-light);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, var(--orange) 0%, #E65C00 100%);
+            color: var(--white);
+            font-family: 'Halant', serif;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px 20px;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            box-shadow: 0 6px 24px rgba(255, 122, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 50%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.18);
+            transform: skewX(-20deg);
+            animation: btn-shine 3s infinite;
+        }
+
+        @keyframes btn-shine {
+            0% {
+                left: -60%;
+            }
+
+            60%,
+            100% {
+                left: 130%;
+            }
+        }
+
+        .cta-btn:active {
+            transform: scale(0.97);
+        }
+
+        .cta-btn:hover {
+            box-shadow: 0 8px 28px rgba(255, 122, 0, 0.55);
+            transform: translateY(-1px);
+        }
+
+        .cta-note {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 12px;
+            margin-top: 9px;
+        }
+
+        /* ===== SECTION BASE ===== */
+        section {
+            padding: 0;
+        }
+
+        .sec-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .sec-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        /* ===== PROBLEM SECTION ===== */
+        .problem-section {
+            background: var(--white);
+            padding: 36px 18px 30px;
+        }
+
+        .problem-section .sec-label {
+            background: #E8F5E9;
+            color: var(--green);
+        }
+
+        .problem-section .sec-title {
+            color: var(--dark);
+        }
+
+        .problem-intro {
+            font-size: 15px;
+            color: var(--grey);
+            line-height: 1.65;
+            margin-bottom: 22px;
+        }
+
+        .cause-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .cause-card {
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            height: 148px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .cause-card:hover {
+            transform: scale(1.03);
+        }
+
+        .cause-card:active {
+            transform: scale(0.97);
+        }
+
+        .cause-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.55) saturate(1.2);
+        }
+
+        .cause-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(46, 125, 50, 0.92) 0%, transparent 55%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 12px;
+        }
+
+        .cause-card-icon {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .cause-card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+        }
+
+        .cause-card-sub {
+            font-size: 11px;
+            color: var(--light-green);
+        }
+
+        .problem-warning {
+            background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+            border-left: 4px solid var(--orange);
+            border-radius: 10px;
+            padding: 14px 16px;
+            font-size: 14px;
+            color: #7B3F00;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        /* ===== RED FLAGS ===== */
+        .redflags-section {
+            background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);
+            padding: 36px 18px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .redflags-section::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 160px;
+            height: 160px;
+            background: rgba(255, 122, 0, 0.1);
+            border-radius: 50%;
+        }
+
+        .redflags-section .sec-label {
+            background: rgba(255, 122, 0, 0.2);
+            color: var(--orange-light);
+        }
+
+        .redflags-section .sec-title {
+            color: var(--white);
+        }
+
+        .flag-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .flag-item {
+            display: flex;
+            gap: 14px;
+            align-items: stretch;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .flag-item:hover {
+            background: rgba(255, 255, 255, 0.14);
+            transform: translateX(4px);
+        }
+
+        .flag-item:active {
+            transform: scale(0.98);
+        }
+
+        .flag-img {
+            width: 180px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .flag-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+            filter: brightness(0.7) saturate(1.1);
+        }
+
+        .flag-item:hover .flag-img img {
+            filter: brightness(0.9) saturate(1.15);
+        }
+
+        .flag-content {
+            padding: 12px 12px 12px 0;
+            flex: 1;
+        }
+
+        .flag-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 3px;
+        }
+
+        .flag-desc {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.4;
+        }
+
+        .flag-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--orange);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 4px;
+            animation: blink 1.4s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        /* ===== MISTAKES ===== */
+        .mistakes-section {
+            background: var(--cream);
+            padding: 36px 18px 30px;
+        }
+
+        .mistakes-section .sec-label {
+            background: #FCE4EC;
+            color: #C62828;
+        }
+
+        .mistakes-section .sec-title {
+            color: var(--dark);
+        }
+
+        .mistake-timeline {
+            position: relative;
+            padding-left: 32px;
+        }
+
+        .mistake-timeline::before {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(to bottom, #EF5350, #FF8A80);
+        }
+
+        .mistake-item {
+            position: relative;
+            margin-bottom: 18px;
+            background: var(--white);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            display: flex;
+            min-height: 90px;
+            cursor: pointer;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+
+        .mistake-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mistake-item:active {
+            transform: scale(0.98);
+        }
+
+        .mistake-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background: #EF5350;
+            border-radius: 50%;
+            border: 3px solid var(--cream);
+            z-index: 1;
+        }
+
+        .mistake-img {
+            width: 90px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .mistake-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.65) saturate(0.8) sepia(0.2);
+        }
+
+        .mistake-body {
+            padding: 14px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .mistake-icon {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .mistake-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #C62828;
+            margin-bottom: 3px;
+        }
+
+        .mistake-desc {
+            font-size: 12.5px;
+            color: var(--grey);
+            line-height: 1.4;
+        }
+
+        .mistake-footer {
+            background: #FFEBEE;
+            border-left: 4px solid #EF5350;
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #B71C1C;
+            margin-top: 4px;
+        }
+
+        /* ===== SOLUTION ===== */
+        .solution-section {
+            background: var(--green);
+            padding: 36px 18px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-section .sec-label {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--white);
+        }
+
+        .solution-section .sec-title {
+            color: var(--white);
+        }
+
+        .solution-hero-img {
+            width: 100%;
+            height: 190px;
+            border-radius: 18px;
+            overflow: hidden;
+            margin-bottom: 22px;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 8% 100%, 0 88%);
+        }
+
+        .solution-hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.6) saturate(1.2);
+        }
+
+        .solution-hero-img-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(27, 94, 32, 0.5), rgba(46, 125, 50, 0.3));
+        }
+
+        .solution-hero-img-overlay p {
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            padding: 0 20px;
+        }
+
+        .solution-points {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .sol-point {
+            display: flex;
+            align-items: stretch;
+            gap: 0;
+            background: rgba(255, 255, 255, 0.09);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .sol-point:hover {
+            background: rgba(255, 255, 255, 0.16);
+            transform: translateX(4px);
+        }
+
+        .sol-point:active {
+            transform: scale(0.98);
+        }
+
+        .sol-point-img {
+            width: 130px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .sol-point-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+            /* filter: brightness(0.6) saturate(1.1); */
+        }
+
+        .sol-point-body {
+            padding: 13px 13px 13px 6px;
+            flex: 1;
+        }
+
+        .sol-point-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 2px;
+        }
+
+        .sol-point-desc {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.853);
+            line-height: 1.4;
+        }
+
+        .sol-disclaimer {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.936);
+            text-align: center;
+            font-style: italic;
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+        }
+
+        /* ===== OFFERS ===== */
+        .offers-section {
+            background: var(--white);
+            padding: 36px 18px 30px;
+        }
+
+        .offers-section .sec-label {
+            background: #FFF3E0;
+            color: var(--orange);
+        }
+
+        .offers-section .sec-title {
+            color: var(--dark);
+        }
+
+        .offers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .offer-card {
+            background: linear-gradient(135deg, #FFF8E7, #FFF3CD);
+            border: 1.5px solid rgba(255, 122, 0, 0.25);
+            border-radius: 16px;
+            padding: 16px 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.18s, box-shadow 0.18s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 122, 0, 0.08);
+            border-radius: 50%;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 122, 0, 0.2);
+        }
+
+        .offer-card:active {
+            transform: scale(0.96);
+        }
+
+        .offer-card-icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .offer-card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .offer-card-badge {
+            display: inline-block;
+            background: var(--orange);
+            color: var(--white);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 20px;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .hiw-section {
+            background: var(--cream);
+            padding: 36px 18px 30px;
+        }
+
+        .hiw-section .sec-label {
+            background: #E8F5E9;
+            color: var(--green);
+        }
+
+        .hiw-section .sec-title {
+            color: var(--dark);
+        }
+
+        .hiw-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            position: relative;
+        }
+
+        .hiw-step {
+            display: flex;
+            align-items: stretch;
+            gap: 0;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.15s;
+        }
+
+        .hiw-step:hover {
+            transform: translateX(5px);
+        }
+
+        .hiw-step:active {
+            transform: scale(0.98);
+        }
+
+        .hiw-step-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 52px;
+            flex-shrink: 0;
+        }
+
+        .hiw-step-num {
+            width: 44px;
+            height: 44px;
+            background: var(--green);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.35);
+            z-index: 1;
+        }
+
+        .hiw-step-line {
+            width: 2px;
+            flex: 1;
+            background: linear-gradient(to bottom, var(--light-green), rgba(129, 199, 132, 0.2));
+            min-height: 30px;
+        }
+
+        .hiw-step:last-child .hiw-step-line {
+            display: none;
+        }
+
+        .hiw-step-card {
+            flex: 1;
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            display: flex;
+            min-height: 96px;
+            margin-left: 14px;
+        }
+
+        .hiw-step-img {
+            width: 86px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .hiw-step-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+            filter: brightness(0.65) saturate(1.1);
+        }
+
+        .hiw-step-content {
+            padding: 14px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hiw-step-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 3px;
+        }
+
+        .hiw-step-desc {
+            font-size: 12.5px;
+            color: var(--grey);
+            line-height: 1.4;
+        }
+
+        /* ===== REVIEWS ===== */
+        .reviews-section {
+            background: var(--green);
+            padding: 36px 18px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reviews-section::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-size: 160px;
+            color: rgba(255, 255, 255, 0.05);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .reviews-section .sec-label {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--white);
+        }
+
+        .reviews-section .sec-title {
+            color: var(--white);
+        }
+
+        .review-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .review-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 18px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .review-card:hover {
+            background: rgba(255, 255, 255, 0.14);
+            transform: translateY(-2px);
+        }
+
+        .review-card:active {
+            transform: scale(0.98);
+        }
+
+        .review-card-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px 10px;
+        }
+
+        .review-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--light-green);
+            flex-shrink: 0;
+        }
+
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.8) saturate(0.9);
+        }
+
+        .review-user-info {
+            flex: 1;
+        }
+
+        .review-name {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .review-location {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        .review-stars {
+            color: #FFD700;
+            font-size: 14px;
+            margin-top: 1px;
+        }
+
+        .review-img {
+            width: 100%;
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.6) saturate(0.9);
+        }
+
+        .review-text {
+            padding: 12px 16px 14px;
+            font-size: 14.5px;
+            color: rgba(255, 255, 255, 0.88);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* ===== TRUST ===== */
+        .trust-section {
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            /* padding: 36px 18px 30px; */
+        }
+
+        .trust-section .sec-label {
+            text-align: center;
+            background: #E8F5E9;
+            color: var(--green);
+        }
+
+        .trust-section .sec-title {
+            text-align: center;
+            color: var(--dark);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .trust-card {
+            background: var(--cream);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(46, 125, 50, 0.15);
+            cursor: pointer;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+
+        .trust-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.18);
+        }
+
+        .trust-card:active {
+            transform: scale(0.96);
+        }
+
+        .trust-card-img {
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .trust-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+            filter: brightness(0.6) saturate(1.1);
+        }
+
+        .trust-card-body {
+            padding: 12px;
+            text-align: center;
+        }
+
+        .trust-card-icon {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .trust-card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 3px;
+        }
+
+        .trust-card-desc {
+            font-size: 12px;
+            color: var(--grey);
+            line-height: 1.4;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            background: var(--cream);
+            padding: 36px 18px 30px;
+        }
+
+        .faq-section .sec-label {
+            background: #E8F5E9;
+            color: var(--green);
+        }
+
+        .faq-section .sec-title {
+            color: var(--dark);
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            border: 1px solid rgba(46, 125, 50, 0.1);
+            transition: box-shadow 0.2s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 16px rgba(46, 125, 50, 0.15);
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+        }
+
+        .faq-q-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--green);
+            color: var(--white);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .faq-q-text {
+            flex: 1;
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1.35;
+        }
+
+        .faq-arrow {
+            font-size: 18px;
+            color: var(--green);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .faq-item.open .faq-arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 16px 16px;
+            font-size: 14px;
+            color: var(--grey);
+            line-height: 1.6;
+            border-top: 1px solid rgba(46, 125, 50, 0.1);
+            padding-top: 12px;
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta-section {
+            background: linear-gradient(160deg, #1B5E20 0%, #2E7D32 60%, #388E3C 100%);
+            padding: 40px 18px 36px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .final-cta-section::before {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 122, 0, 0.12);
+            border-radius: 50%;
+        }
+
+        .final-cta-section::after {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            width: 140px;
+            height: 140px;
+            background: rgba(129, 199, 132, 0.1);
+            border-radius: 50%;
+        }
+
+        .final-cta-img {
+            width: 100%;
+            height: 170px;
+            border-radius: 18px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            position: relative;
+            clip-path: polygon(5% 0, 95% 0, 100% 90%, 50% 100%, 0 90%);
+        }
+
+        .final-cta-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.55) saturate(1.1);
+        }
+
+        .final-cta-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta-subtitle {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, var(--orange) 0%, #E65C00 100%);
+            color: var(--white);
+            font-family: 'Halant', serif;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 18px 20px;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 8px 28px rgba(255, 122, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.15s, box-shadow 0.15s;
+            z-index: 1;
+        }
+
+        .final-cta-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 50%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.18);
+            transform: skewX(-20deg);
+            animation: btn-shine 2.8s infinite;
+        }
+
+        .final-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(255, 122, 0, 0.6);
+        }
+
+        .final-cta-btn:active {
+            transform: scale(0.97);
+        }
+
+        .final-cta-note {
+            margin-top: 14px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== DISCLAIMER ===== */
+        .disclaimer-section {
+            background: #F5F5F5;
+            padding: 20px 18px;
+            border-top: 2px dashed #E0E0E0;
+        }
+
+        .disclaimer-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #9E9E9E;
+            margin-bottom: 8px;
+        }
+
+        .disclaimer-text {
+            font-size: 11.5px;
+            color: #BDBDBD;
+            line-height: 1.6;
+        }
+
+        /* ===== FLOATING WA BUTTON ===== */
+        .wa-float {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            width: calc(100% - 36px);
+            max-width: 414px;
+            display: none;
+        }
+
+        .wa-float-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #f97815;
+            color: var(--white);
+            font-family: 'Halant', serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 14px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5), 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+            animation: float-pulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes float-pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5), 0 2px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.65), 0 4px 12px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        .wa-float-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .wa-float-btn:active {
+            transform: scale(0.96);
+        }
+
+        .wa-icon {
+            font-size: 22px;
+        }
+
+        /* Divider */
+        .section-divider {
+            height: 6px;
+            background: linear-gradient(90deg, var(--light-green), var(--orange), var(--light-green));
+            opacity: 0.4;
+        }
+
+        /* ===== INLINE ORDER FORM SECTION ===== */
+        .order-form-section {
+            background: linear-gradient(160deg, #1B5E20 0%, #2E7D32 55%, #388E3C 100%);
+            padding: 0 0 36px;
+            position: relative;
+            overflow: hidden;
+            scroll-margin-top: 12px;
+        }
+
+        .order-form-section::before {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
+            width: 220px;
+            height: 220px;
+            background: rgba(255, 122, 0, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .order-form-section::after {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 160px;
+            height: 160px;
+            background: rgba(129, 199, 132, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .order-form-header {
+            background: linear-gradient(135deg, rgba(27, 94, 32, 0.7), rgba(0, 0, 0, 0.15));
+            padding: 30px 20px 24px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .order-form-badge {
+            display: inline-block;
+            background: rgba(255, 122, 0, 0.2);
+            border: 1.5px solid rgba(255, 122, 0, 0.55);
+            color: var(--orange-light);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .order-form-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .order-form-sub {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .order-form-tags {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .order-tag {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 20px;
+            padding: 5px 12px;
+            font-size: 12px;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* FORM BODY */
+        .order-form-body {
+            padding: 28px 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-form-group {
+            margin-bottom: 20px;
+        }
+
+        .order-label {
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 9px;
+        }
+
+        .req {
+            color: var(--orange-light);
+        }
+
+        .order-input-wrap {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .order-input-wrap:focus-within {
+            border-color: var(--light-green);
+            box-shadow: 0 0 0 4px rgba(129, 199, 132, 0.25);
+        }
+
+        .order-input-icon {
+            padding: 0 12px;
+            font-size: 18px;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .order-input {
+            flex: 1;
+            padding: 15px 14px 15px 0;
+            font-family: 'Halant', serif;
+            font-size: 16px;
+            color: var(--dark);
+            background: transparent;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .order-input::placeholder {
+            color: #BDBDBD;
+        }
+
+        .order-input.error~.order-input-wrap,
+        .order-input-wrap:has(.order-input.error) {
+            border-color: #EF5350;
+            box-shadow: 0 0 0 4px rgba(239, 83, 80, 0.15);
+        }
+
+        .phone-wrap-inline {
+            gap: 0;
+        }
+
+        .order-phone-prefix {
+            padding: 15px 12px 15px 14px;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--green-dark);
+            border-right: 1.5px solid rgba(46, 125, 50, 0.2);
+            flex-shrink: 0;
+            white-space: nowrap;
+            background: rgba(232, 245, 233, 0.6);
+        }
+
+        .order-error {
+            display: none;
+            font-size: 12.5px;
+            color: #FFCDD2;
+            margin-top: 6px;
+            padding-left: 4px;
+            font-weight: 600;
+        }
+
+        .order-submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--orange) 0%, #E65C00 100%);
+            color: var(--white);
+            font-family: 'Halant', serif;
+            font-size: 19px;
+            font-weight: 700;
+            padding: 18px 20px;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 6px 24px rgba(255, 122, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.25);
+            transition: transform 0.15s, box-shadow 0.15s;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 14px;
+        }
+
+        .order-submit-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 50%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.18);
+            transform: skewX(-20deg);
+            animation: btn-shine 3s infinite;
+        }
+
+        .order-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(255, 122, 0, 0.55);
+        }
+
+        .order-submit-btn:active {
+            transform: scale(0.97);
+        }
+
+        .order-submit-btn:disabled {
+            opacity: 0.75;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .order-btn-loader {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .order-submit-btn.loading .order-btn-text {
+            display: none;
+        }
+
+        .order-submit-btn.loading .order-btn-loader {
+            display: flex;
+        }
+
+        .order-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2.5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: var(--white);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .order-form-privacy {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.6;
+            padding-bottom: 4px;
+        }
+
+        /* SUCCESS */
+        .order-success {
+            display: none;
+            padding: 32px 20px 8px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-success-icon {
+            font-size: 60px;
+            margin-bottom: 16px;
+            animation: pop-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: block;
+        }
+
+        @keyframes pop-in {
+            from {
+                transform: scale(0.4);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .order-success-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .order-success-desc {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.65;
+            margin-bottom: 22px;
+        }
+
+        .order-success-offers {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 16px 18px;
+            margin-bottom: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .success-offer-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .success-offer-row span:first-child {
+            font-size: 20px;
+        }
+
+        .order-wa-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: var(--white);
+            font-family: 'Halant', serif;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px 20px;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            transition: transform 0.15s, box-shadow 0.15s;
+            text-decoration: none;
+        }
+
+        .order-wa-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Spacing utility */
+        .mt8 {
+            margin-top: 8px;
+        }
+
+        .mt16 {
+            margin-top: 16px;
+        }
+
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .sec-wrap {
+            padding: 28px 0 8px;
+            font-family: 'Halant', serif;
+        }
+
+        .sec-top {
+            padding: 0 18px 20px;
+        }
+
+        .sec-lbl {
+            display: inline-block;
+            background: #E8F5E9;
+            color: #2E7D32;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .sec-h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin: 0 0 6px;
+            line-height: 1.3;
+        }
+
+        .sec-intro {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .cause-row {
+            display: flex;
+            align-items: stretch;
+            min-height: 130px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cause-row.flip {
+            flex-direction: row-reverse;
+        }
+
+        .panel-color {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 18px 20px;
+            position: relative;
+            border-radius: 0;
+        }
+
+        .cause-row:not(.flip) .panel-color {
+            border-radius: 0 40px 40px 0;
+        }
+
+        .cause-row.flip .panel-color {
+            border-radius: 40px 0 0 40px;
+        }
+
+        .panel-img {
+            width: 130px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-background-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cause-row:not(.flip) .panel-img {
+            border-radius: 12px 0 0 12px;
+        }
+
+        .cause-row.flip .panel-img {
+            border-radius: 0 12px 12px 0;
+            border: 2px;
+            border-radius: 0 0 0 20px;
+        }
+
+        .panel-img .big-icon {
+            font-size: 64px;
+            line-height: 1;
+            display: block;
+            text-align: center;
+        }
+
+        .cause-num {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            opacity: 0.75;
+            margin-bottom: 5px;
+        }
+
+        .cause-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 5px;
+        }
+
+        .cause-sub {
+            font-size: 15px;
+            opacity: 1;
+            line-height: 1.4;
+        }
+
+        .warn-box {
+            margin: 16px 18px 6px;
+            background: #FFF3CD;
+            border-left: 4px solid #FF7A00;
+            border-radius: 10px;
+            padding: 13px 15px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #7B3F00;
+            line-height: 1.5;
+        }
+
+        .c1 {
+            background: #21ad0f;
+        }
+
+        .c2 {
+            background: #428f18;
+        }
+
+        .c3 {
+            background: #023c07;
+        }
+
+        .c4 {
+            background: #2E9E6B;
+        }
+
+        .c1 .cause-num,
+        .c1 .cause-title,
+        .c1 .cause-sub {
+            color: #fff;
+        }
+
+        .c2 .cause-num,
+        .c2 .cause-title,
+        .c2 .cause-sub {
+            color: #fff;
+        }
+
+        .c3 .cause-num,
+        .c3 .cause-title,
+        .c3 .cause-sub {
+            color: #fff;
+        }
+
+        .c4 .cause-num,
+        .c4 .cause-title,
+        .c4 .cause-sub {
+            color: #fff;
+        }
+
+        .sep {
+            height: 3px;
+            background: #111;
+            margin: 0;
+        }
+
+        .ms-wrap {
+            background: #2E7D32;
+            padding: 32px 16px 28px;
+            font-family: 'Halant', serif;
+            border-radius: 16px;
+        }
+
+        .ms-top {
+            margin-bottom: 24px;
+        }
+
+        .ms-lbl {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #FFEBEE;
+            color: #C62828;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .ms-h2 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.25;
+            margin: 0;
+        }
+
+        .ms-h2 span {
+            color: #FF7A00;
+        }
+
+        /* PILL CARDS */
+        .pill-card {
+            background: #F5ECD7;
+            border-radius: 50px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            min-height: 160px;
+            position: relative;
+            overflow: hidden;
+            padding: 22px 0 22px 24px;
+        }
+
+        .pill-card.flip {
+            flex-direction: row-reverse;
+            padding: 22px 24px 22px 0;
+        }
+
+        /* dot accent */
+        .pill-dot {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #FF7A00;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 8px;
+            box-shadow: 0 3px 10px rgba(255, 122, 0, 0.4);
+        }
+
+        .pill-body {
+            flex: 1;
+            padding-right: 12px;
+            min-width: 0;
+        }
+
+        .pill-card.flip .pill-body {
+            padding-right: 0;
+            padding-left: 12px;
+        }
+
+        .pill-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1B1B1B;
+            margin: 8px 0 6px;
+            line-height: 1.25;
+        }
+
+        .pill-desc {
+            font-size: 15px;
+            color: #5C4B2A;
+            line-height: 1.55;
+        }
+
+        /* image overflow */
+        .pill-img-wrap {
+            width: 130px;
+            flex-shrink: 0;
+            height: 160px;
+            position: relative;
+            overflow: visible;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .pill-img-wrap .big-emoji {
+            font-size: 90px;
+            line-height: 1;
+            position: absolute;
+            bottom: -8px;
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+            user-select: none;
+        }
+
+        .pill-card:not(.flip) .pill-img-wrap {
+            margin-right: -10px;
+        }
+
+        .pill-card.flip .pill-img-wrap {
+            margin-left: -10px;
+        }
+
+        /* num badge */
+        .pill-num {
+            font-size: 15px;
+            font-weight: 700;
+            color: #8B6914;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        /* footer */
+        .ms-footer {
+            background: #FFEBEE;
+            border-left: 4px solid #FF7A00;
+            border-radius: 12px;
+            padding: 14px 16px;
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #7B3F00;
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .road-wrap {
+            font-family: 'Halant', serif;
+            background: linear-gradient(160deg, #1e6b07 0%, #287612 40%, #1e8610 100%);
+            padding: 36px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* dotted background pattern */
+        .road-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 22px 22px;
+            pointer-events: none;
+        }
+
+        /* ── HEADER ── */
+        .road-header {
+            text-align: center;
+            padding: 0 20px 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .road-lbl {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .road-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.1;
+            text-shadow: 0 3px 16px rgba(0, 0, 0, 0.25);
+            margin-bottom: 6px;
+        }
+
+        .road-sub {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        /* ── ROAD SVG ── */
+        .road-svg-wrap {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 130px;
+            width: 260px;
+            z-index: 0;
+            opacity: 0.55;
+            pointer-events: none;
+        }
+
+        .road-svg-wrap svg {
+            width: 100%;
+        }
+
+        /* ── STEPS CONTAINER ── */
+        .road-steps {
+            position: relative;
+            z-index: 2;
+            padding: 0 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        /* ── SINGLE STEP ── */
+        .road-step {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* odd: card on LEFT side */
+        .road-step:nth-child(odd) {
+            justify-content: flex-start;
+        }
+
+        /* even: card on RIGHT side */
+        .road-step:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        /* ── NUMBER CIRCLE ── */
+        .step-num-circle {
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            z-index: 4;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            border: 3px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .road-step:nth-child(odd) .step-num-circle {
+            right: -10px;
+            top: -20px;
+            background: linear-gradient(135deg, #26C6DA, #00838F);
+        }
+
+        .road-step:nth-child(even) .step-num-circle {
+            left: -10px;
+            top: -20px;
+            background: linear-gradient(135deg, #FFA726, #E65100);
+        }
+
+        /* ── CARD ── */
+        .step-card {
+            width: 72%;
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 20px;
+            padding: 20px 16px 0;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            overflow: visible;
+            position: relative;
+        }
+
+        /* dashed border inner effect like image */
+        .step-card::before {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            border: 2px dashed rgba(0, 0, 0, 0.08);
+            border-radius: 14px;
+            pointer-events: none;
+        }
+
+        .step-tag {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            opacity: 0.5;
+            color: #1B1B1B;
+        }
+
+        .step-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1B1B1B;
+            line-height: 1.3;
+            margin-bottom: 6px;
+        }
+
+        .step-desc {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+
+        /* ── IMAGE overflows bottom of card ── */
+        .step-img-wrap {
+            width: 100%;
+            height: 220px;
+            margin: 0 -16px;
+            width: calc(100% + 32px);
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 18px 18px;
+            margin-top: 0;
+        }
+
+        .step-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.82) saturate(1.15);
+        }
+
+        /* colour tint overlay per step */
+        /* .road-step:nth-child(odd) .step-img-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 131, 143, 0.55), transparent 60%);
+        }
+
+        .road-step:nth-child(even) .step-img-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(230, 81, 0, 0.5), transparent 60%);
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-top-ribbon">🚨 सावधान! गाँठ को ignore करना सबसे बड़ी गलती हो सकती है</div>
+
+            <img src="./Image/Hero.png" style="width: 100%; height: auto; object-fit: cover;" alt="">
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <div class="sec-wrap">
+            <div class="sec-top">
+                <span class="sec-lbl">⚠️ समझें पहले</span>
+                <h2 class="sec-h2">शरीर में गाँठ क्यों बनती है?</h2>
+                <p class="sec-intro">हर गाँठ dangerous नहीं होती, लेकिन हर गाँठ को समझना जरूरी है।</p>
+            </div>
+
+            <div class="sep"></div>
+
+            <!-- ROW 1 — text LEFT, icon RIGHT -->
+            <div class="cause-row">
+                <div class="panel-color c1">
+                    <div class="cause-num">01 — Cause</div>
+                    <div class="cause-title">Lipoma</div>
+                    <div class="cause-sub">शरीर के नीचे fat cells जमा होने से बनने वाली soft, movable गाँठ। आमतौर पर
+                        harmless होती है।</div>
+                </div>
+                <div class="panel-img">
+                    <span class="big-icon">
+                        <img src="./Image/1.png"
+                            style="width: 120px; height: 120px;object-fit: cover; border-radius:0 0 0 25px" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <!-- ROW 2 — icon LEFT, text RIGHT -->
+            <div class="cause-row flip">
+                <div class="panel-color c2">
+                    <div class="cause-num">02 — Cause</div>
+                    <div class="cause-title">Cyst</div>
+                    <div class="cause-sub">Fluid या semi-solid material से भरी थैली, जो skin के अंदर बनती है।
+                        Fluid-filled lump।</div>
+                </div>
+                <div class="panel-img">
+                    <span class="big-icon">
+                        <img src="./Image/2.png"
+                            style="width: 120px; height: 120px;object-fit: cover; border-radius: 0 0 0 25px;" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <!-- ROW 3 — text LEFT, icon RIGHT -->
+            <div class="cause-row">
+                <div class="panel-color c3">
+                    <div class="cause-num">03 — Cause</div>
+                    <div class="cause-title">Infection</div>
+                    <div class="cause-sub">Bacteria या virus से lymph nodes सूज जाते हैं, जिससे गर्दन, बगल या groin में
+                        गाँठ बनती है।</div>
+                </div>
+                <div class="panel-img">
+                    <span class="big-icon">
+                        <img src="./Image/3.png"
+                            style="width: 120px; height: 120px;object-fit: cover; border-radius: 0 0 0 25px;" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <!-- ROW 4 — icon LEFT, text RIGHT -->
+            <div class="cause-row flip">
+                <div class="panel-color c4">
+                    <div class="cause-num">04 — Cause</div>
+                    <div class="cause-title">Hormonal Imbalance</div>
+                    <div class="cause-sub">Hormones में बदलाव से tissue की growth affect होती है — अंदरूनी बदलाव से गाँठ
+                        बनती है।</div>
+                </div>
+                <div class="panel-img">
+                    <span class="big-icon">
+                        <img src="./Image/4.png"
+                            style="width: 120px; height: 120px;       object-fit: cover; border-radius: 0 0 0 25px;"
+                            alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="warn-box">
+                👉 गलत जानकारी लेने से delay होता है — यही सबसे बड़ा risk है
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- RED FLAGS -->
+        <section class="redflags-section">
+            <span class="sec-label">🚨 ये signs दिखें तो</span>
+            <h2 class="sec-title" style="color:#fff;">तुरंत action लें</h2>
+
+            <div class="flag-list">
+                <div class="flag-item">
+                    <div class="flag-img">
+                        <img src="./Image/18.png" alt="Growing lump">
+                    </div>
+                    <div class="flag-content">
+                        <div style="display:flex;align-items:flex-start;gap:8px;">
+                            <div class="flag-dot" style="margin-top:6px;"></div>
+                            <div>
+                                <div class="flag-title">गाँठ तेजी से बढ़ रही है</div>
+                                <div class="flag-desc">Size में rapid change — immediate attention ज़रूरी</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-img">
+                        <img src="./Image/5.png" alt="Hard lump">
+                    </div>
+                    <div class="flag-content">
+                        <div style="display:flex;align-items:flex-start;gap:8px;">
+                            <div class="flag-dot" style="margin-top:6px;"></div>
+                            <div>
+                                <div class="flag-title">बहुत hard है / हिलती नहीं</div>
+                                <div class="flag-desc">Fixed, rigid lump — serious sign हो सकता है</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-img">
+                        <img src="./Image/6.png" alt="Skin color change">
+                    </div>
+                    <div class="flag-content">
+                        <div style="display:flex;align-items:flex-start;gap:8px;">
+                            <div class="flag-dot" style="margin-top:6px;"></div>
+                            <div>
+                                <div class="flag-title">Skin color बदल रहा है</div>
+                                <div class="flag-desc">रंग बदलना या अलग texture — ignore न करें</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-img">
+                        <img src="./Image/7.png" alt="Weight loss">
+                    </div>
+                    <div class="flag-content">
+                        <div style="display:flex;align-items:flex-start;gap:8px;">
+                            <div class="flag-dot" style="margin-top:6px;"></div>
+                            <div>
+                                <div class="flag-title">Unexplained weight loss / weakness</div>
+                                <div class="flag-desc">बिना वजह कमज़ोरी या वजन घटना — alert sign</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#order-form" class="cta-btn">
+                🩺 Free Expert से बात करें
+            </a>
+            <p class="cta-note">ऐसे cases में delay न करें — पहले समझें, फिर action लें</p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- COMMON MISTAKES -->
+        <div class="ms-wrap">
+            <div class="ms-top">
+                <div class="ms-lbl">❌ यह गलतियाँ न करें</div>
+                <h2 class="ms-h2">लोग कहाँ <span>गलती</span> करते हैं?</h2>
+            </div>
+
+            <!-- CARD 1 — text left, emoji right -->
+            <div class="pill-card">
+                <div class="pill-body">
+                    <div class="pill-num">गलती 01</div>
+                    <div class="pill-dot">🔍</div>
+                    <div class="pill-title">Google / YouTube से self-diagnosis</div>
+                    <div class="pill-desc">गलत result = गलत tension या गलत neglect। Internet पर हर चीज़ cancer नहीं है —
+                        पर expert ही बता सकते हैं।</div>
+                </div>
+                <div class="pill-img-wrap">
+                    <span class="big-emoji">
+                        <img src="./Image/8.png"
+                            style="width: 150px; height:150px; object-fit:cover; border-radius: 25px 30px; " alt="">
+                    </span>
+                </div>
+            </div>
+
+            <!-- CARD 2 — emoji left, text right (flip) -->
+            <div class="pill-card ">
+                <div class="pill-body">
+                    <div class="pill-num">गलती 02</div>
+                    <div class="pill-dot">😶</div>
+                    <div class="pill-title">"दर्द नहीं है" सोचकर ignore करना</div>
+                    <div class="pill-desc">Pain-free लुम्प भी serious हो सकती है। दर्द न होना — safe होने की guarantee
+                        नहीं।</div>
+                </div>
+                <div class="pill-img-wrap">
+                    <span class="big-emoji">
+                        <img src="./Image/9.png"
+                            style="width: 150px; height:150px; object-fit:cover;  border-radius: 25px 30px;" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <!-- CARD 3 — text left, emoji right -->
+            <div class="pill-card">
+                <div class="pill-body">
+                    <div class="pill-num">गलती 03</div>
+                    <div class="pill-dot">🌾</div>
+                    <div class="pill-title">बिना समझे घरेलू इलाज</div>
+                    <div class="pill-desc">Without diagnosis, treatment backfire कर सकता है। पहले समझो — फिर इलाज करो।
+                    </div>
+                </div>
+                <div class="pill-img-wrap">
+                    <span class="big-emoji">
+                        <img src="./Image/10.png"
+                            style="width: 150px; height:150px; object-fit:cover; border-radius: 25px 30px; " alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="ms-footer">
+                👉 Problem गाँठ नहीं — <strong>गलत decision</strong> है
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- SOLUTION -->
+        <section class="solution-section">
+            <span class="sec-label">🌿 हमारा समाधान</span>
+            <h2 class="sec-title">Ayurvedic Health Expert के साथ सही दिशा पाएँ</h2>
+
+            <div class="solution-hero-img">
+                <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80"
+                    alt="Ayurvedic expert">
+                <div class="solution-hero-img-overlay">
+                    <p>आपकी गाँठ की condition को समझना — हमारी ज़िम्मेदारी</p>
+                </div>
+            </div>
+
+            <p style="color:rgba(255,255,255,0.8);font-size:15px;line-height:1.65;margin-bottom:18px;">
+                हम आपको गाँठ (lump) की condition समझने में मदद करते हैं:
+            </p>
+
+            <div class="solution-points">
+                <div class="sol-point">
+                    <div class="sol-point-img">
+                        <img src="./Image/11.png" alt="Analysis">
+                    </div>
+                    <div class="sol-point-body">
+                        <div class="sol-point-title">🔬 Symptom-based analysis</div>
+                        <div class="sol-point-desc">आपके symptoms सुनकर सही direction</div>
+                    </div>
+                </div>
+                <div class="sol-point">
+                    <div class="sol-point-img">
+                        <img src="./Image/12.png" alt="Diet">
+                    </div>
+                    <div class="sol-point-body">
+                        <div class="sol-point-title">🥗 Diet & lifestyle guidance</div>
+                        <div class="sol-point-desc">Ayurvedic approach से सही खान-पान</div>
+                    </div>
+                </div>
+                <div class="sol-point">
+                    <div class="sol-point-img">
+                        <img src="./Image/13.png" alt="Risk">
+                    </div>
+                    <div class="sol-point-body">
+                        <div class="sol-point-title">⚠️ Risk समझाकर सही next-step</div>
+                        <div class="sol-point-desc">कितना serious है — clearly बताएंगे</div>
+                    </div>
+                </div>
+                <div class="sol-point">
+                    <div class="sol-point-img">
+                        <img src="./Image/14.png" alt="Referral">
+                    </div>
+                    <div class="sol-point-body">
+                        <div class="sol-point-title">🏥 Doctor / test referral</div>
+                        <div class="sol-point-desc">जरूरत पड़ने पर सही जगह भेजेंगे</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sol-disclaimer">
+                हम diagnosis replace नहीं करते — हम सही decision लेने में मदद करते हैं
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- HOW IT WORKS -->
+        <div class="road-wrap">
+
+            <!-- dotted bg handled by ::before -->
+
+            <!-- winding road -->
+            <div class="road-svg-wrap">
+                <svg viewBox="0 0 200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M100 0 C100 100, 40 150, 60 280 C80 400, 160 430, 140 560 C120 680, 40 720, 60 850 C70 910, 100 900, 100 900"
+                        stroke="#1A237E" stroke-width="48" stroke-linecap="round" />
+                    <path
+                        d="M100 0 C100 100, 40 150, 60 280 C80 400, 160 430, 140 560 C120 680, 40 720, 60 850 C70 910, 100 900, 100 900"
+                        stroke="#263238" stroke-width="42" stroke-linecap="round" />
+                    <!-- lane dividers -->
+                    <path d="M100 0 C100 100, 40 150, 60 280 C80 400, 160 430, 140 560 C120 680, 40 720, 60 850"
+                        stroke="#FFC107" stroke-width="3" stroke-dasharray="18 14" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <!-- HEADER -->
+            <div class="road-header">
+                <div class="road-lbl">⚙️ Process</div>
+                <div class="road-title">कैसे काम<br>करता है?</div>
+                <div class="road-sub">3 simple steps में पाएं Free Expert Guidance</div>
+            </div>
+
+            <!-- STEPS -->
+            <div class="road-steps">
+
+                <!-- STEP 1 — LEFT card -->
+                <div class="road-step">
+                    <div class="step-num-circle">1</div>
+                    <div class="step-card">
+                        <div class="step-tag">Step 01</div>
+                        <div class="step-title">📲 आपसे Call पर connect करेंगे</div>
+                        <div class="step-desc">नीचे button दबाएं, directly expert से जुड़ें — instant response मिलेगा।
+                        </div>
+                        <div class="step-img-wrap">
+                            <img src="./Image/15.png" alt="WhatsApp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 — RIGHT card -->
+                <div class="road-step">
+                    <div class="step-num-circle">2</div>
+                    <div class="step-card">
+                        <div class="step-tag">Step 02</div>
+                        <div class="step-title">📋 गाँठ की details share करें</div>
+                        <div class="step-desc">Size, location, symptoms — सब बताएं। Photos भी share कर सकते हैं।</div>
+                        <div class="step-img-wrap">
+                            <img src="./Image/16.png" alt="Details">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 — LEFT card -->
+                <div class="road-step">
+                    <div class="step-num-circle">3</div>
+                    <div class="step-card">
+                        <div class="step-tag">Step 03</div>
+                        <div class="step-title">✅ Expert से guidance + next step पाएँ</div>
+                        <div class="step-desc">Clear direction + personalized Ayurvedic advice — बिल्कुल free।</div>
+                        <div class="step-img-wrap">
+                            <img src="./Image/17.png" alt="Guidance">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section-divider"></div>
+
+        <!-- TRUST -->
+        <section class="trust-section">
+            <span class="sec-label">🧠 Trust</span>
+            <h2 class="sec-title">क्यों भरोसा करें?</h2>
+            <img src="./Image/Ayurvedic.png" style="width:100%; height:auto; object-fit:cover;" alt="">
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- OFFERS -->
+        <section class="offers-section">
+            <span class="sec-label">🎁 Special Offers</span>
+            <h2 class="sec-title">आपके लिए खास फ़ायदे</h2>
+
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <span class="offer-card-icon">🚚</span>
+                    <div class="offer-card-title">Free Delivery</div>
+                    <span class="offer-card-badge">FREE</span>
+                </div>
+                <div class="offer-card">
+                    <span class="offer-card-icon">🥗</span>
+                    <div class="offer-card-title">Free Diet Chart</div>
+                    <span class="offer-card-badge">FREE</span>
+                </div>
+                <div class="offer-card">
+                    <span class="offer-card-icon">💵</span>
+                    <div class="offer-card-title">Cash on Delivery</div>
+                    <span class="offer-card-badge">COD</span>
+                </div>
+                <div class="offer-card">
+                    <span class="offer-card-icon">🩺</span>
+                    <div class="offer-card-title">Expert Consultation</div>
+                    <span class="offer-card-badge">FREE</span>
+                </div>
+            </div>
+
+            <a href="#order-form" class="cta-btn"
+                style="background:linear-gradient(135deg,var(--green) 0%,var(--green-dark) 100%);box-shadow:0 6px 20px rgba(46,125,50,0.4);">
+                🌿 अभी Free Guidance लें
+            </a>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- FINAL CTA BANNER -->
+        <section class="final-cta-section">
+            <div class="final-cta-img">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Take action">
+            </div>
+            <h2 class="final-cta-title">Delay मत करो — पहले समझो, फिर सही कदम लो</h2>
+            <p class="final-cta-subtitle">गाँठ को ignore मत करो, सही जानकारी लो<br>हमारे Expert आपकी मदद के लिए तैयार
+                हैं 🌿</p>
+            <a href="#order-form" class="final-cta-btn">
+                📲 अभी Free Guidance के लिए Register करें
+            </a>
+            <p class="final-cta-note">🔒 Private • No spam • No cure claims • Free Delivery • COD Available</p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- INLINE ORDER FORM SECTION -->
+        <html>
+
+        <head>
+            <script>
+                const userPhoneInput = document.getElementById('userPhone');
+                if (userPhoneInput) {
+                    userPhoneInput.addEventListener('input', function () {
+                        this.value = this.value.replace(/\D/g, '');
+                    });
+                }
+
+                function submitForm(event) {
+                    event.preventDefault();
+                    const n = document.getElementById('userName').value.trim();
+                    const p = document.getElementById('userPhone').value.trim();
+
+                    // Reset error displays
+                    document.getElementById('nameError').style.display = 'none';
+                    document.getElementById('phoneError').style.display = 'none';
+                    document.getElementById('userName').classList.remove('error');
+                    document.getElementById('userPhone').classList.remove('error');
+
+                    let valid = true;
+
+                    // Validate name
+                    if (!n || n.length < 2) {
+                        document.getElementById('nameError').style.display = 'block';
+                        document.getElementById('userName').classList.add('error');
+                        valid = false;
+                    }
+
+                    // Validate phone
+                    if (!p || p.length !== 10 || !/^[6-9]\d{9}$/.test(p)) {
+                        document.getElementById('phoneError').style.display = 'block';
+                        document.getElementById('userPhone').classList.add('error');
+                        valid = false;
+                    }
+
+                    if (!valid) {
+                        return false;
+                    }
+
+                    const btn = document.getElementById('orderSubmitBtn');
+                    btn.classList.add('loading');
+                    btn.disabled = true;
+
+                    const formData = new FormData(event.target);
+                    let done = false;
+
+                    const finish = (success = true) => {
+                        if (done) return;
+                        done = true;
+                        btn.classList.remove('loading');
+                        btn.disabled = false;
+
+                        if (success) {
+                            // Navigate to thank you page after short delay
+                            setTimeout(() => {
+                                window.location.href = './thankyou.html';
+                            }, 1000);
+                        } else {
+                            // Show error message
+                            alert('कुछ गलत हो गया। कृपया फिर से प्रयास करें या सीधे WhatsApp पर संपर्क करें।');
+                        }
+                    };
+
+                    // Submit to Google Apps Script
+                    fetch('https://script.google.com/macros/s/AKfycbxnMuCrcwfsopbyXWRdPKj_4qYlJEaAl1dUNJDOock5uw9XVCUdt8nFDOcmDjmiWIS7/exec', {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                finish(true);
+                            } else {
+                                finish(false);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Submission error:', error);
+                            finish(false);
+                        });
+
+                    // Fallback timeout
+                    setTimeout(() => {
+                        if (!done) {
+                            finish(true); // Assume success if no response after 8 seconds
+                        }
+                    }, 8000);
+
+                    return false;
+                }
+            </script>
+        </head>
+
+        <body>
+            <section class="order-form-section" id="order-form">
+
+                <div class="order-form-header">
+                    <div class="order-form-badge">🌿 Free Ayurvedic Expert Guidance</div>
+                    <h2 class="order-form-title">अपना नाम & WhatsApp नंबर दें</h2>
+                    <p class="order-form-sub">Expert आपसे जल्द contact करेंगे — 100% Free</p>
+                    <div class="order-form-tags">
+                        <span class="order-tag">🚚 Free Delivery</span>
+                        <span class="order-tag">🥗 Free Diet Chart</span>
+                        <span class="order-tag">💵 COD</span>
+                    </div>
+                </div>
+
+                <!-- FORM FIELDS -->
+                <div class="order-form-body" id="orderFormBody">
+
+                    <form onsubmit="submitForm(event)">
+                        <div class="order-form-group">
+                            <label class="order-label" for="userName">आपका पूरा नाम <span class="req">*</span></label>
+                            <div class="order-input-wrap">
+                                <span class="order-input-icon">👤</span>
+                                <input type="text" id="userName" class="order-input" placeholder="जैसे: Ramesh Kumar"
+                                    name="name" autocomplete="name" maxlength="60">
+                            </div>
+                            <div class="order-error" id="nameError">⚠ कृपया अपना नाम लिखें</div>
+                        </div>
+
+                        <div class="order-form-group">
+                            <label class="order-label" for="userPhone">WhatsApp नंबर <span class="req">*</span></label>
+                            <div class="order-input-wrap phone-wrap-inline">
+                                <span class="order-phone-prefix">🇮🇳 +91</span>
+                                <input type="tel" id="userPhone" name="phone" class="order-input"
+                                    placeholder="10-digit mobile number" maxlength="10" inputmode="numeric"
+                                    pattern="[0-9]*">
+                            </div>
+                            <div class="order-error" id="phoneError">⚠ valid 10-digit number दें (6-9 से शुरू)</div>
+                        </div>
+
+                        <button class="order-submit-btn" type="submit" id="orderSubmitBtn">
+                            <span class="order-btn-text">📲 Free Guidance के लिए Submit करें →</span>
+                            <span class="order-btn-loader">
+                                <span class="order-spinner"></span>
+                                जानकारी submit हो रही है…
+                            </span>
+                        </button>
+
+                        <!-- <div class="success-view" id="successView">
+                            <div class="success-icon">✓</div>
+                            <h3 class="success-title serif">Order Place हो गया!</h3>
+                            <p class="success-text">हमारी team जल्द आपसे contact करेगी।<br>COD delivery 3–5 days में
+                                होगी।
+                            </p>
+                        </div> -->
+
+                    </form>
+
+                    <div class="order-form-privacy">
+                        🔒 आपकी जानकारी पूरी तरह safe है। No spam • No unwanted calls
+                    </div>
+
+                </div>
+
+                <!-- SUCCESS STATE -->
+                <div class="order-success" id="orderSuccess">
+                    <div class="order-success-icon">✅</div>
+                    <div class="order-success-title">Request Submit हो गई!</div>
+                    <div class="order-success-desc">
+                        हमारे Ayurvedic Expert जल्द ही आपसे<br>
+                        <strong>WhatsApp पर connect करेंगे।</strong>
+                    </div>
+                    <div class="order-success-offers">
+                        <div class="success-offer-row">
+                            <span>🚚</span><span>Free Delivery आपके घर तक</span>
+                        </div>
+                        <div class="success-offer-row">
+                            <span>🥗</span><span>Free Diet Chart मिलेगा</span>
+                        </div>
+                        <div class="success-offer-row">
+                            <span>💵</span><span>Cash on Delivery उपलब्ध</span>
+                        </div>
+                    </div>
+                    <a id="successWaLink" href="#" class="order-wa-btn" target="_blank">
+                        <span>💬</span> अभी WhatsApp पर बात करें
+                    </a>
+                </div>
+
+            </section>
+        </body>
+
+        </html>
+
+        <div class="section-divider"></div>
+
+        <!-- REVIEWS -->
+        <section class="reviews-section">
+            <span class="sec-label">💬 Real Stories</span>
+            <h2 class="sec-title">लोग क्या कहते हैं?</h2>
+
+            <div class="review-cards">
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <div class="review-avatar">
+                            <img src="./Image/Client1.png"
+                                alt="Ramesh">
+                        </div>
+                        <div class="review-user-info">
+                            <div class="review-name">Ramesh K.</div>
+                            <div class="review-location">Jaipur, Rajasthan</div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        "पहले बहुत confusion था, अब clear हो गया कि क्या करना है। Expert ने बिना pressure के सब
+                        explain
+                        किया।"
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <div class="review-avatar">
+                            <img src="./Image/Client3.png"
+                                alt="Priya">
+                        </div>
+                        <div class="review-user-info">
+                            <div class="review-name">Priya S.</div>
+                            <div class="review-location">Lucknow, UP</div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        "Doctor के पास जाने से पहले सही direction मिल गया। Time और पैसे दोनों बचे।"
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <div class="review-avatar">
+                            <img src="./Image/Client2.png"
+                                alt="Suresh">
+                        </div>
+                        <div class="review-user-info">
+                            <div class="review-name">Suresh M.</div>
+                            <div class="review-location">Indore, MP</div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        "Free guidance में honest advice मिला, pressure नहीं था। Truly helpful service!"
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <span class="sec-label">❓ FAQ</span>
+            <h2 class="sec-title">अक्सर पूछे जाते सवाल</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">Q1</div>
+                        <div class="faq-q-text">क्या हर गाँठ cancer होती है?</div>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">नहीं, ज्यादातर गाँठें normal होती हैं — but बिना जांच confirm
+                            नहीं
+                            होता। इसीलिए expert से समझना ज़रूरी है।</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">Q2</div>
+                        <div class="faq-q-text">क्या बिना test पता चल सकता है?</div>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Basic understanding हो सकती है, लेकिन confirmation के लिए test
+                            जरूरी होता है। हम सही test suggest करेंगे।</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">Q3</div>
+                        <div class="faq-q-text">क्या Ayurvedic से गाँठ ठीक हो सकती है?</div>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">कुछ cases में support मिलता है — but serious cases में medical
+                            treatment जरूरी हो सकता है। हम honest guidance देते हैं।</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">Q4</div>
+                        <div class="faq-q-text">क्या ये service सच में free है?</div>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">हाँ, initial guidance free है। कोई hidden charges नहीं। No
+                            spam,
+                            no pressure — सिर्फ सही जानकारी।</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <div class="disclaimer-section">
+            <div class="disclaimer-title">⚠️ Disclaimer</div>
+            <div class="disclaimer-text">
+                यह page केवल general health awareness और Ayurvedic guidance के लिए है। यह किसी भी प्रकार का medical
+                diagnosis, treatment, या cure claim नहीं करता। किसी भी health condition के लिए qualified medical
+                professional से consult करें। Results individual to individual vary कर सकते हैं। Ayurvedic guidance
+                standard medical treatment का replacement नहीं है।
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Floating Scroll-to-Form Button -->
+    <div class="wa-float" id="waFloat">
+        <a href="#order-form" class="wa-float-btn">
+            <span class="wa-icon">📝</span>
+            Free Guidance लें — Register करें
+        </a>
+    </div>
+
+    <script>
+        // ===== FAQ Toggle =====
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+
+        // ===== Floating button on scroll =====
+        const waFloat = document.getElementById('waFloat');
+        const disclaimerSection = document.querySelector('.disclaimer-section');
+        const orderFormSection = document.querySelector('.order-form-section');
+
+        window.addEventListener('scroll', () => {
+            // Check if disclaimer or order form section is in viewport
+            let shouldHide = false;
+
+            if (disclaimerSection) {
+                const disclaimerRect = disclaimerSection.getBoundingClientRect();
+                const isDisclaimerVisible = disclaimerRect.top < window.innerHeight && disclaimerRect.bottom > 0;
+                if (isDisclaimerVisible) shouldHide = true;
+            }
+
+            if (orderFormSection) {
+                const orderFormRect = orderFormSection.getBoundingClientRect();
+                const isOrderFormVisible = orderFormRect.top < window.innerHeight && orderFormRect.bottom > 0;
+                if (isOrderFormVisible) shouldHide = true;
+            }
+
+            // Hide button if disclaimer or order form is visible, otherwise show after 400px scroll
+            if (shouldHide) {
+                waFloat.style.display = 'none';
+            } else {
+                waFloat.style.display = window.scrollY > 400 ? 'block' : 'none';
+            }
+        });
+
+        // ===== Smooth scroll for all anchor links =====
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ===== Scroll reveal =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('section').forEach(sec => {
+            sec.style.opacity = '0';
+            sec.style.transform = 'translateY(24px)';
+            sec.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(sec);
+        });
+    </script>
+</body>
+
+</html>
