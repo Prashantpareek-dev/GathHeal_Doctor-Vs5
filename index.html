@@ -4,8 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="गाँठ की समस्या का आयुर्वेदिक समाधान। Free expert guidance और personalized treatment plan पाएं।">
+    <meta name="theme-color" content="#2E7D32">
     <title>गाँठ की समस्या? — Free Ayurvedic Expert Guidance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://script.google.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="preload" href="Image/Hero.avif" as="image" fetchpriority="high">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     <style>
         :root {
             --green: #2E7D32;
@@ -98,6 +108,16 @@
             object-fit: cover;
             display: block;
             filter: brightness(0.62) saturate(1.1);
+        }
+        
+        /* Lazy load optimization */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        img[loading="lazy"].loaded {
+            opacity: 1;
         }
 
         .hero-image-overlay {
@@ -2374,7 +2394,7 @@
         <section class="hero">
             <div class="hero-top-ribbon">🚨 सावधान! गाँठ को ignore करना सबसे बड़ी गलती हो सकती है</div>
 
-            <img src="./Image/Hero.png" style="width: 100%; height: auto; object-fit: cover;" alt="">
+            <img src="./Image/Hero.avif" style="width: 100%; height: auto; object-fit: cover;" alt="गाँठ का इलाज" width="450" height="240" fetchpriority="high">
 
         </section>
 
@@ -2399,8 +2419,8 @@
                 </div>
                 <div class="panel-img">
                     <span class="big-icon">
-                        <img src="./Image/1.png"
-                            style="width: 120px; height: 120px;object-fit: cover; border-radius:0 0 0 25px" alt="">
+                        <img src="./Image/1.avif"
+                            style="width: 120px; height: 120px;object-fit: cover; border-radius:0 0 0 25px" alt="Lipoma" width="120" height="120" loading="lazy">
                     </span>
                 </div>
             </div>
@@ -2417,8 +2437,8 @@
                 </div>
                 <div class="panel-img">
                     <span class="big-icon">
-                        <img src="./Image/2.png"
-                            style="width: 120px; height: 120px;object-fit: cover; border-radius: 0 0 0 25px;" alt="">
+                        <img src="./Image/2.avif"
+                            style="width: 120px; height: 120px;object-fit: cover; border-radius: 0 0 0 25px;" alt="Cyst" width="120" height="120" loading="lazy">
                     </span>
                 </div>
             </div>
@@ -2435,8 +2455,8 @@
                 </div>
                 <div class="panel-img">
                     <span class="big-icon">
-                        <img src="./Image/3.png"
-                            style="width: 120px; height: 120px;object-fit: cover; border-radius: 0 0 0 25px;" alt="">
+                        <img src="./Image/3.avif"
+                            style="width: 120px; height: 120px;object-fit: cover; border-radius: 0 0 0 25px;" alt="Infection" width="120" height="120" loading="lazy">
                     </span>
                 </div>
             </div>
@@ -2453,9 +2473,9 @@
                 </div>
                 <div class="panel-img">
                     <span class="big-icon">
-                        <img src="./Image/4.png"
+                        <img src="./Image/4.avif"
                             style="width: 120px; height: 120px;       object-fit: cover; border-radius: 0 0 0 25px;"
-                            alt="">
+                            alt="Hormonal" width="120" height="120" loading="lazy">
                     </span>
                 </div>
             </div>
@@ -2477,7 +2497,7 @@
             <div class="flag-list">
                 <div class="flag-item">
                     <div class="flag-img">
-                        <img src="./Image/18.png" alt="Growing lump">
+                        <img src="./Image/18.avif" alt="Growing lump" width="180" height="100" loading="lazy">
                     </div>
                     <div class="flag-content">
                         <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -2491,7 +2511,7 @@
                 </div>
                 <div class="flag-item">
                     <div class="flag-img">
-                        <img src="./Image/5.png" alt="Hard lump">
+                        <img src="./Image/5.avif" alt="Hard lump" width="180" height="100" loading="lazy">
                     </div>
                     <div class="flag-content">
                         <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -2505,7 +2525,7 @@
                 </div>
                 <div class="flag-item">
                     <div class="flag-img">
-                        <img src="./Image/6.png" alt="Skin color change">
+                        <img src="./Image/6.avif" alt="Skin color change" width="180" height="100" loading="lazy">
                     </div>
                     <div class="flag-content">
                         <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -2519,7 +2539,7 @@
                 </div>
                 <div class="flag-item">
                     <div class="flag-img">
-                        <img src="./Image/7.png" alt="Weight loss">
+                        <img src="./Image/7.avif" alt="Weight loss" width="180" height="100" loading="lazy">
                     </div>
                     <div class="flag-content">
                         <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -2559,7 +2579,7 @@
                 </div>
                 <div class="pill-img-wrap">
                     <span class="big-emoji">
-                        <img src="./Image/8.png"
+                        <img src="./Image/8.avif"
                             style="width: 150px; height:150px; object-fit:cover; border-radius: 25px 30px; " alt="">
                     </span>
                 </div>
@@ -2576,7 +2596,7 @@
                 </div>
                 <div class="pill-img-wrap">
                     <span class="big-emoji">
-                        <img src="./Image/9.png"
+                        <img src="./Image/9.avif"
                             style="width: 150px; height:150px; object-fit:cover;  border-radius: 25px 30px;" alt="">
                     </span>
                 </div>
@@ -2593,7 +2613,7 @@
                 </div>
                 <div class="pill-img-wrap">
                     <span class="big-emoji">
-                        <img src="./Image/10.png"
+                        <img src="./Image/10.avif"
                             style="width: 150px; height:150px; object-fit:cover; border-radius: 25px 30px; " alt="">
                     </span>
                 </div>
@@ -2626,7 +2646,7 @@
             <div class="solution-points">
                 <div class="sol-point">
                     <div class="sol-point-img">
-                        <img src="./Image/11.png" alt="Analysis">
+                        <img src="./Image/11.avif" alt="Analysis" width="130" height="100" loading="lazy">
                     </div>
                     <div class="sol-point-body">
                         <div class="sol-point-title">🔬 Symptom-based analysis</div>
@@ -2635,7 +2655,7 @@
                 </div>
                 <div class="sol-point">
                     <div class="sol-point-img">
-                        <img src="./Image/12.png" alt="Diet">
+                        <img src="./Image/12.avif" alt="Diet" width="130" height="100" loading="lazy">
                     </div>
                     <div class="sol-point-body">
                         <div class="sol-point-title">🥗 Diet & lifestyle guidance</div>
@@ -2644,7 +2664,7 @@
                 </div>
                 <div class="sol-point">
                     <div class="sol-point-img">
-                        <img src="./Image/13.png" alt="Risk">
+                        <img src="./Image/13.avif" alt="Risk" width="130" height="100" loading="lazy">
                     </div>
                     <div class="sol-point-body">
                         <div class="sol-point-title">⚠️ Risk समझाकर सही next-step</div>
@@ -2653,7 +2673,7 @@
                 </div>
                 <div class="sol-point">
                     <div class="sol-point-img">
-                        <img src="./Image/14.png" alt="Referral">
+                        <img src="./Image/14.avif" alt="Referral" width="130" height="100" loading="lazy">
                     </div>
                     <div class="sol-point-body">
                         <div class="sol-point-title">🏥 Doctor / test referral</div>
@@ -2708,7 +2728,7 @@
                         <div class="step-desc">नीचे button दबाएं, directly expert से जुड़ें — instant response मिलेगा।
                         </div>
                         <div class="step-img-wrap">
-                            <img src="./Image/15.png" alt="WhatsApp">
+                            <img src="./Image/15.avif" alt="WhatsApp" width="86" height="96" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -2721,7 +2741,7 @@
                         <div class="step-title">📋 गाँठ की details share करें</div>
                         <div class="step-desc">Size, location, symptoms — सब बताएं। Photos भी share कर सकते हैं।</div>
                         <div class="step-img-wrap">
-                            <img src="./Image/16.png" alt="Details">
+                            <img src="./Image/16.avif" alt="Details" width="86" height="96" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -2734,7 +2754,7 @@
                         <div class="step-title">✅ Expert से guidance + next step पाएँ</div>
                         <div class="step-desc">Clear direction + personalized Ayurvedic advice — बिल्कुल free।</div>
                         <div class="step-img-wrap">
-                            <img src="./Image/17.png" alt="Guidance">
+                            <img src="./Image/17.avif" alt="Guidance" width="86" height="96" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -2749,7 +2769,7 @@
         <section class="trust-section">
             <span class="sec-label">🧠 Trust</span>
             <h2 class="sec-title">क्यों भरोसा करें?</h2>
-            <img src="./Image/Ayurvedic.png" style="width:100%; height:auto; object-fit:cover;" alt="">
+            <img src="./Image/Ayurvedic.avif" style="width:100%; height:auto; object-fit:cover;" alt="आयुर्वेदिक समाधान" width="450" height="190" loading="lazy">
         </section>
 
         <div class="section-divider"></div>
@@ -2810,13 +2830,16 @@
         <html>
 
         <head>
-            <script>
-                const userPhoneInput = document.getElementById('userPhone');
-                if (userPhoneInput) {
-                    userPhoneInput.addEventListener('input', function () {
-                        this.value = this.value.replace(/\D/g, '');
-                    });
-                }
+            <script defer>
+                // Wait for DOM to be ready
+                document.addEventListener('DOMContentLoaded', function() {
+                    const userPhoneInput = document.getElementById('userPhone');
+                    if (userPhoneInput) {
+                        userPhoneInput.addEventListener('input', function () {
+                            this.value = this.value.replace(/\D/g, '');
+                        });
+                    }
+                });
 
                 function submitForm(event) {
                     event.preventDefault();
@@ -3005,8 +3028,8 @@
                 <div class="review-card">
                     <div class="review-card-top">
                         <div class="review-avatar">
-                            <img src="./Image/Client1.png"
-                                alt="Ramesh">
+                            <img src="./Image/Client1.avif"
+                                alt="Ramesh" width="48" height="48" loading="lazy">
                         </div>
                         <div class="review-user-info">
                             <div class="review-name">Ramesh K.</div>
@@ -3023,8 +3046,8 @@
                 <div class="review-card">
                     <div class="review-card-top">
                         <div class="review-avatar">
-                            <img src="./Image/Client3.png"
-                                alt="Priya">
+                            <img src="./Image/Client3.avif"
+                                alt="Priya" width="48" height="48" loading="lazy">
                         </div>
                         <div class="review-user-info">
                             <div class="review-name">Priya S.</div>
@@ -3039,8 +3062,8 @@
                 <div class="review-card">
                     <div class="review-card-top">
                         <div class="review-avatar">
-                            <img src="./Image/Client2.png"
-                                alt="Suresh">
+                            <img src="./Image/Client2.avif"
+                                alt="Suresh" width="48" height="48" loading="lazy">
                         </div>
                         <div class="review-user-info">
                             <div class="review-name">Suresh M.</div>
@@ -3133,7 +3156,26 @@
         </a>
     </div>
 
-    <script>
+    <script defer>
+        // ===== Lazy Loading Images =====
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.addEventListener('load', () => {
+                    img.classList.add('loaded');
+                });
+                if (img.complete) {
+                    img.classList.add('loaded');
+                }
+            });
+        } else {
+            // Fallback for browsers that don't support native lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        }
+
         // ===== FAQ Toggle =====
         document.querySelectorAll('.faq-item').forEach(item => {
             item.querySelector('.faq-question').addEventListener('click', () => {
@@ -3143,34 +3185,41 @@
             });
         });
 
-        // ===== Floating button on scroll =====
+        // ===== Floating button on scroll (optimized with RAF) =====
         const waFloat = document.getElementById('waFloat');
         const disclaimerSection = document.querySelector('.disclaimer-section');
         const orderFormSection = document.querySelector('.order-form-section');
 
+        let ticking = false;
         window.addEventListener('scroll', () => {
-            // Check if disclaimer or order form section is in viewport
-            let shouldHide = false;
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    // Check if disclaimer or order form section is in viewport
+                    let shouldHide = false;
 
-            if (disclaimerSection) {
-                const disclaimerRect = disclaimerSection.getBoundingClientRect();
-                const isDisclaimerVisible = disclaimerRect.top < window.innerHeight && disclaimerRect.bottom > 0;
-                if (isDisclaimerVisible) shouldHide = true;
-            }
+                    if (disclaimerSection) {
+                        const disclaimerRect = disclaimerSection.getBoundingClientRect();
+                        const isDisclaimerVisible = disclaimerRect.top < window.innerHeight && disclaimerRect.bottom > 0;
+                        if (isDisclaimerVisible) shouldHide = true;
+                    }
 
-            if (orderFormSection) {
-                const orderFormRect = orderFormSection.getBoundingClientRect();
-                const isOrderFormVisible = orderFormRect.top < window.innerHeight && orderFormRect.bottom > 0;
-                if (isOrderFormVisible) shouldHide = true;
-            }
+                    if (orderFormSection) {
+                        const orderFormRect = orderFormSection.getBoundingClientRect();
+                        const isOrderFormVisible = orderFormRect.top < window.innerHeight && orderFormRect.bottom > 0;
+                        if (isOrderFormVisible) shouldHide = true;
+                    }
 
-            // Hide button if disclaimer or order form is visible, otherwise show after 400px scroll
-            if (shouldHide) {
-                waFloat.style.display = 'none';
-            } else {
-                waFloat.style.display = window.scrollY > 400 ? 'block' : 'none';
+                    // Hide button if disclaimer or order form is visible, otherwise show after 400px scroll
+                    if (shouldHide) {
+                        waFloat.style.display = 'none';
+                    } else {
+                        waFloat.style.display = window.scrollY > 400 ? 'block' : 'none';
+                    }
+                    ticking = false;
+                });
+                ticking = true;
             }
-        });
+        }, { passive: true });
 
         // ===== Smooth scroll for all anchor links =====
         document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -3183,15 +3232,16 @@
             });
         });
 
-        // ===== Scroll reveal =====
+        // ===== Scroll reveal (optimized) =====
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target); // Stop observing once revealed
                 }
             });
-        }, { threshold: 0.08 });
+        }, { threshold: 0.08, rootMargin: '50px' }); // Preload elements 50px before viewport
 
         document.querySelectorAll('section').forEach(sec => {
             sec.style.opacity = '0';
